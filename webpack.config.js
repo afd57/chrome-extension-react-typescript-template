@@ -6,6 +6,8 @@ const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: {
     popup: "./src/popup.tsx",
+    "content-script": "./src/content-script.ts",
+    buttonn: "./src/buttonn.tsx",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -31,9 +33,11 @@ module.exports = {
       filename: "popup.html",
     }),
     new CopyPlugin({
-      patterns: [
-        { from: "public" },
-      ],
+      patterns: [{ from: "public" }],
     }),
   ],
+  resolve: {
+    extensions: ['.ts', '.js', '.tsx'],
+  }
 };
+
