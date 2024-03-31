@@ -14,6 +14,11 @@ A template project to quickly build a Chrome extension using TypeScript.
 2.  Go to [_chrome://extensions_](chrome://extensions) in Google Chrome
 3.  With the developer mode checkbox ticked, click **Load unpacked extension...** and select the _dist_ folder from this repo
 
+## Extension screenshots 
+
+![Extension Info](./img/extension-info.png)
+![Extension Info](./img/popupjs.png)
+
 
 ## Referance
 - https://www.youtube.com/watch?app=desktop&v=8OCEfOKzpAw
